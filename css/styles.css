@@ -1,0 +1,350 @@
+/* Estilos generales - Mobile First */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    line-height: 1.8; /* Mejora la legibilidad */
+    margin: 0; /* Elimina el margen por defecto del body */
+    padding: 0; /* Elimina el padding por defecto del body */
+    background-color: white; /* Establece un fondo blanco */
+    color: #333; /* Color del texto */
+    background-image: url('fondo.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir el área */
+    background-position: center; /* Posiciona la imagen en el centro */
+    background-attachment: fixed; /* Hace que la imagen se mantenga fija al hacer scroll */
+    box-sizing: border-box; /* Incluye el padding y border dentro del ancho y alto del elemento */
+}
+
+header {
+    background-color: #2c7a7b; /* Color de fondo del header */
+    color: white; /* Color del texto en el header */
+    padding: 30px; /* Añade espacio interno en el header */
+    text-align: center; /* Centra el contenido dentro del header */
+    margin-bottom: 20px; /* Espacio debajo del header */
+    border-bottom: 5px solid #225b5d; /* Borde inferior para el header */
+}
+
+header h1 {
+    margin: 0; /* Elimina el margen del título */
+    font-size: 2.5em; /* Establece un tamaño grande para el título */
+}
+
+h2 {
+    font-size: 2rem; /* Tamaño de fuente para los subtítulos */
+    color: #225b5d; /* Color verde oscuro */
+    margin-bottom: 15px; /* Espacio debajo del subtítulo */
+}
+
+/* Estilo para la barra de navegación */
+.nav-container {
+    display: flex; /* Usamos Flexbox para la disposición de los elementos */
+    justify-content: center; /* Centramos los elementos dentro del nav */
+    background-color: #2c7a7b; /* Color de fondo del menú de navegación */
+    padding: 10px 0; /* Espaciado vertical (arriba y abajo) */
+}
+
+.nav-list {
+    display: flex; /* Los elementos hijos serán organizados en línea */
+    list-style: none; /* Eliminamos los puntos de la lista */
+    padding: 0; /* Sin padding en la lista */
+    margin: 0; /* Sin margen en la lista */
+}
+
+.nav-list li {
+    margin: 0 15px; /* Espaciado horizontal entre los elementos del menú */
+}
+
+.nav-list a {
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    color: white; /* Color del texto de los enlaces */
+    padding: 10px; /* Espaciado interno en los enlaces */
+    transition: background-color 0.3s; /* Transición suave para el cambio de fondo */
+}
+
+.nav-list a:hover {
+    background-color: #ddd; /* Color de fondo al pasar el mouse */
+    color: #333; /* Color del texto al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados en el fondo del enlace */
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column; /* Cambiamos a columna para dispositivos móviles */
+    }
+    
+    .nav-list {
+        flex-direction: column; /* Organiza los elementos en columna */
+        align-items: center; /* Alinea los elementos al centro */
+    }
+
+    .nav-list li {
+        margin: 5px 0; /* Espaciado vertical entre los elementos */
+    }
+
+    .nav-list a {
+        padding: 15px 20px; /* Ajusta el espaciado interno para mejorar la interacción */
+    }
+}
+
+
+/* Estilo para el contenedor principal */
+main {
+    padding: 20px; /* Añade espacio interno alrededor del contenido principal */
+    margin: 0 auto; /* Centra el contenedor principal dentro de la página */
+    background-color: #ffffff; /* Color de fondo blanco para el área principal */
+    border: 1px solid #ddd; /* Borde gris claro alrededor del contenido principal */
+    border-radius: 10px; /* Esquinas redondeadas para el contenedor principal */
+}
+
+/* Secciones dentro del contenido principal */
+main section {
+    margin-bottom: 20px; /* Espacio debajo de cada sección */
+    padding: 20px; /* Espacio interno en las secciones */
+    background-color: #e6fffa; /* Fondo suave */
+    border-radius: 8px; /* Bordes redondeados para las secciones */
+    border: 1px solid #81e6d9; /* Borde para las secciones */
+}
+
+.grid-container {
+    display: block; /* Modo de visualización como bloque */
+}
+
+section {
+    padding: 40px; /* Espacio interno en las secciones */
+    margin-bottom: 40px; /* Espacio debajo de las secciones */
+    background-color: white; /* Color de fondo blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor de la sección */
+}
+
+section h2 {
+    color: #4CAF50; /* Color verde para los títulos */
+    font-size: 2em; /* Tamaño de fuente para los títulos */
+    margin-bottom: 10px; /* Espacio debajo de los títulos */
+}
+
+section p {
+    font-size: 1.1em; /* Tamaño de fuente para los párrafos */
+    color: #333; /* Color del texto en los párrafos */
+    margin-bottom: 15px; /* Espacio debajo de los párrafos */
+}
+
+/* Estilo general para la tabla de eventos */
+.event-table {
+    width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+    border-collapse: collapse; /* Elimina el espacio entre las celdas */
+    margin: 20px 0; /* Espaciado vertical */
+}
+
+/* Estilo para las celdas del encabezado */
+.event-table th, .event-table td {
+    padding: 12px; /* Espaciado interno */
+    text-align: left; /* Alineación del texto */
+    border-bottom: 1px solid #ccc; /* Línea de separación entre filas */
+}
+
+/* Estilo para filas alternas */
+.event-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo alternativo */
+}
+
+/* Estilo para el encabezado */
+.event-table th {
+    background-color: #2c7a7b; /* Color de fondo del encabezado */
+    color: white; /* Color del texto en el encabezado */
+}
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+    .event-table {
+        display: block; /* Cambia la tabla a bloque */
+        overflow-x: auto; /* Permite el desplazamiento horizontal */
+        white-space: nowrap; /* Evita que el texto se rompa en líneas */
+    }
+
+    .event-table thead {
+        display: none; /* Oculta el encabezado en dispositivos pequeños */
+    }
+
+    .event-table tr {
+        display: flex; /* Utiliza flexbox para las filas */
+        flex-direction: column; /* Coloca las celdas en columnas */
+        margin-bottom: 15px; /* Espaciado entre filas */
+        border: 1px solid #ccc; /* Agrega un borde a cada fila */
+        border-radius: 5px; /* Bordes redondeados */
+    }
+
+    .event-table td {
+        text-align: right; /* Alinea el texto a la derecha */
+        position: relative; /* Posicionamiento relativo para el pseudo-elemento */
+        padding-left: 50%; /* Espaciado para hacer espacio al pseudo-elemento */
+    }
+
+    .event-table td::before {
+        position: absolute; /* Posicionamiento absoluto para el pseudo-elemento */
+        left: 10px; /* Espaciado desde la izquierda */
+        white-space: nowrap; /* Evita el salto de línea */
+        font-weight: bold; /* Negrita para las etiquetas */
+    }
+
+    /* Etiquetas para cada celda */
+    .event-table td:nth-child(1)::before { content: "Evento:"; }
+    .event-table td:nth-child(2)::before { content: "Fecha:"; }
+    .event-table td:nth-child(3)::before { content: "Hora:"; }
+    .event-table td:nth-child(4)::before { content: "Ubicación:"; }
+}
+
+
+/* Mejoras para pantallas más anchas */
+@media (min-width: 1024px) {
+    table th, table td {
+        text-align: center; /* Alineación centrada del texto en pantallas anchas */
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    }
+}
+
+/* Sección de Temas de Interés */
+#temas-de-interes {
+    margin: 20px; /* Espaciado alrededor de la sección */
+    padding: 20px; /* Espacio interno dentro de la sección */
+    background-color: #e6fffa; /* Color de fondo suave */
+    border: 1px solid #81e6d9; /* Borde azul claro */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Párrafo dentro de la sección Temas de Interés */
+#temas-de-interes p {
+    font-size: 1rem; /* Tamaño de fuente para el párrafo */
+    color: #333; /* Color del texto */
+    margin-top: 20px; /* Espaciado superior para el párrafo */
+}
+
+/* Media Queries para mejorar la adaptabilidad en pantallas pequeñas */
+@media (max-width: 768px) {
+    .media-container {
+        height: auto; /* Ajuste automático de la altura en pantallas pequeñas */
+    }
+
+    .img-tema {
+        position: relative; /* Posición relativa para una alineación fluida */
+        width: 100%; /* Ancho completo de las imágenes en pantallas pequeñas */
+        margin-bottom: 10px; /* Espacio entre imágenes */
+    }
+
+    /* Ajustar el espaciado entre imágenes en pantallas pequeñas */
+    .img-tema:nth-child(1),
+    .img-tema:nth-child(2),
+    .img-tema:nth-child(3) {
+        left: 0; /* Restablece la posición horizontal */
+        top: 0; /* Restablece la posición vertical */
+    }
+}
+
+/* Videos en iframe */
+iframe {
+    width: 100%; /* Ancho completo del iframe */
+    height: 400px; /* Altura fija para el iframe */
+    border: none; /* Elimina los bordes por defecto */
+    margin-top: 20px; /* Espacio superior */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del iframe */
+    display: block; /* Modo de visualización de bloque */
+    margin: 20px auto; /* Centra el iframe */
+    border-top: 5px solid #225b5d; /* Borde superior para el iframe */
+}
+
+/* Imágenes adaptables */
+img {
+    width: 100%; /* Ancho completo de las imágenes */
+    height: auto; /* Ajuste automático de la altura */
+    margin-bottom: 10px; /* Espacio debajo de las imágenes */
+}
+
+/* Formularios */
+form {
+    background-color: white; /* Color de fondo blanco para los formularios */
+    padding: 15px; /* Espacio interno para los formularios */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+label {
+    display: block; /* Muestra las etiquetas como bloques */
+    margin-bottom: 5px; /* Espacio debajo de las etiquetas */
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="password"], textarea, select {
+    width: 100%; /* Ancho completo para los campos de entrada */
+    padding: 8px; /* Espacio interno en los campos de entrada */
+    margin-bottom: 10px; /* Espacio debajo de los campos de entrada */
+    border: 1px solid #ccc; /* Bordes gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el padding y borde dentro del ancho y alto del campo */
+}
+
+button {
+    background-color: #4CAF50; /* Color de fondo verde para los botones */
+    color: white; /* Color del texto en los botones */
+    padding: 10px 15px; /* Espaciado interno para los botones */
+    border: none; /* Elimina el borde por defecto */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+button:hover {
+    background-color: #45a049; /* Color de fondo más oscuro cuando se pasa el mouse sobre el botón */
+}
+
+/* Media Queries */
+
+/* Pantallas más anchas (tablets) */
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Pantallas grandes (desktops) */
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    table th, table td {
+        text-align: center;
+    }
+}
+
+/* Estilo para impresión en blanco y negro */
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    header, nav, footer {
+        background-color: white;
+        color: black;
+    }
+
+    table {
+        border: 1px solid black;
+    }
+
+    table th, table td {
+        border: 1px solid black;
+    }
+
+    input[type="submit"] {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conservación del Medio Ambiente</title>
+    <!-- Precarga la hoja de estilos principal styles.css para mejorar el rendimiento -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <!-- Vincula la hoja de estilos principal styles.css con el documento -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>    
+<body>
+
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Organización para la Conservación del Medio Ambiente</h1> <!-- Título principal de la organización -->
+    </header>
+
+    <nav class="nav-container">
+        <ul class="nav-list">
+            <li><a href="#quienes-somos">Quiénes Somos</a></li>
+            <li><a href="#actividades">Actividades Realizadas</a></li>
+            <li><a href="#eventos">Próximos Eventos</a></li>
+            <li><a href="#temas-interes">Temas de Interés</a></li>
+            <li><a href="#contactanos">Únete a Nosotros</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Conservación_de_la_naturaleza" target="_blank">Wikipedia</a></li>
+        </ul>
+    </nav>
+    
+
+    <main>
+        <!-- Diseño en cuadrícula -->
+        <div class="grid-container">    
+            <!-- Sección: Quiénes Somos -->
+            <section id="quienes-somos">
+                <h2>Quiénes Somos</h2>
+                <p><strong>Denominación Legal:</strong> Organización para la Conservación del Medio Ambiente</p>
+                <p><strong>Misión:</strong> Promover la conservación del medio ambiente a través de la educación, la concienciación y la participación comunitaria.</p>
+                <p><strong>Visión:</strong> Ser una organización líder en la protección del medio ambiente, con un impacto positivo en la sociedad y en la naturaleza.</p>
+                <img src="quienes_somos1.jpg" alt="Imagen de la organización">
+                <img src="quienes_somos2.jpg" alt="Actividades de la organización">
+            </section>
+
+            <!-- Sección: Actividades Realizadas -->
+            <section id="actividades">
+                <h2>Actividades Realizadas</h2>
+                <ul>
+                    <li><strong>Reforestación en el Parque Nacional:</strong> Participación comunitaria en la plantación de árboles en el Parque Nacional, promoviendo la restauración de ecosistemas naturales.</li>
+                    <li><strong>Campaña de Limpieza de Playas:</strong> Iniciativa para limpiar las playas locales, recolectando residuos y educando a la comunidad sobre la importancia de mantener los océanos limpios.</li>
+                    <li><strong>Taller de Reciclaje:</strong> Organización de talleres educativos sobre la correcta separación de residuos y la importancia del reciclaje en la reducción de desechos.</li>
+                </ul>
+            </section>
+            <!-- Sección: Próximos Eventos -->
+            <section id="eventos">
+                <h2>Próximos Eventos</h2>
+                <table class="event-table">
+                    <thead>
+                        <tr>
+                            <th>Evento</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Ubicación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Reforestación en el Parque Nacional</td>
+                            <td>18-08-2024</td>
+                            <td>10:00 AM - 18:00 PM</td>
+                            <td>Parque Nacional</td>
+                        </tr>
+                        <tr>
+                            <td>Campaña de Limpieza de Playas</td>
+                            <td>22-08-2024</td>
+                            <td>10:00 AM - 18:00 PM</td>
+                            <td>Playa Central</td>
+                        </tr>
+                        <tr>
+                            <td>Taller de Reciclaje</td>
+                            <td>26-08-2024</td>
+                            <td>10:00 AM - 18:00 PM</td>
+                            <td>Centro Comunitario</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+            <!-- Sección: Temas de Interés -->
+            <section id="temas-interes">
+                <h2>Temas de Interés</h2>
+                <p><strong>Cambio Climático:</strong> El cambio climático es uno de los mayores desafíos ambientales a los que se enfrenta la humanidad.</p>
+                <div class="gallery">
+                    <img src="css/img1.jpg" alt="Tema 1" class="img-tema">
+                    <img src="css/img2.jpg" alt="Tema 2" class="img-tema">
+                    <img src="css/img3.jpg" alt="Tema 3" class="img-tema">
+                </div>
+                <div class="audio">
+                    <audio controls>
+                        <source src="audios/cambio_climatico.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </section>
+
+            <!-- Sección: Videos Relacionados -->
+            <section id="videos-relacionados">
+                <h2>Videos Relacionados</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tusVideoID" 
+                        title="Video relacionado con el medio ambiente" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </section>
+
+            <!-- Sección: Acceso a la Página -->
+            <section id="acceso-pagina">
+                <h2>Acceso a la Página</h2>
+                <form action="procesar_acceso.php" method="post">
+                    <label for="usuario">Nombre de Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu nombre de usuario" required><br>
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Ingresa tu contraseña" required><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+
+            <!-- Sección: Formulario de Contacto -->
+            <section id="contactanos">
+                <h2>Únete a Nosotros</h2>
+                <form action="procesar_formulario.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br>
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required><br>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" rows="4" required></textarea><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 Organización para la Conservación del Medio Ambiente</p>
+    </footer>
+</body>
+</html>
